@@ -54,3 +54,16 @@
 
 
 ## Search
+### Binary search
+1. sorted array: for binary search, elements need to be in increasing order
+2. from start/end: O(n)
+3. from middle and choose left/right half
+
+4. efficiency: O(log(N))
+
+
+### Recursion
+1. a function calls itself
+2. a base case: while(exit condition)
+3. alter the input for each iteration
+
