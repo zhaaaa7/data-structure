@@ -69,3 +69,50 @@ https://classroom.udacity.com/courses/ud513/lessons/7123524086/concepts/71225249
 2. a base case: while(exit condition)
 3. alter the input for each iteration
 
+## sort
+1. memorize complexity
+2. in place? => in original data stucture
+
+### Bubble sort 
+1. naive approach
+2. compare side by side and switch when necessary
+3. O(n-1)(n-1)=O(n^2)
+4. best case O(n): 0 or 1 number needs to be bubbled
+5. in place, space complecity: O(1)
+
+
+### Merge sort
+1. split a huge down as much as possible and overtime, building it up
+2. Principle -- divide and conquer
+3. O(n * m),m=log(n)
+4. capture the intervals where the change happens
+5. bad auxillary space=O(n)
+
+
+### quick sort
+1. pivot: last element by convention
+2. find the right position for the pivot ()
+3. recursively picking pivot 
+4. worst: O(n^n) -- pivot is the largest, best O(n ^ logN) -- pivot should be the middle
+5. in place
+6. improvement: find the median among last few elements
+
+
+## Map
+1. key-value structure
+2. look up sth by its name and go some location to get the value
+
+### Set
+1. no order, no repetition
+
+2. Map is Set based data structure, Array is List based structure
+
+3. the group of keys in a map are a set: unique
+
+
+## Hashing
+1. use a data structure that employs a hash function allows you to do look-ups in constant time
+2. linear time search for other data structure
+* List, set: look through every element to find the one you are looking for
+* stacks and queues let you to look up the oldest/newest element immediately
+* priority queues let you find the highest priority element quickly
