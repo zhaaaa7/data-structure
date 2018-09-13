@@ -116,3 +116,51 @@ https://classroom.udacity.com/courses/ud513/lessons/7123524086/concepts/71225249
 * List, set: look through every element to find the one you are looking for
 * stacks and queues let you to look up the oldest/newest element immediately
 * priority queues let you find the highest priority element quickly
+
+3. value -------> hash value
+
+4. last few digits -> reminder(hash code) -> save in an array(hash code as the index) -> look up by index (const time)
+
+5. collision
+* change hash function
+* change structure of the array: save a list hashed in one spot -- bucket
+
+
+### Hash Maps
+1. hashing the key and save <key,value> in one buckets produced by the hash function
+
+
+
+## Tree
+1. An extension of linked list
+2. constaints: 
+* completely connected
+* no cycle
+3. term
+* nodes: individual elements that contain values
+* level
+* parent-child relationship, ancestor-descendant
+* leaves, external node
+* height of node: leave node(0)
+* height of tree: height of root node
+* depth: number of edges to the root
+
+
+### tree traversal
+#### Depth-First Traversals
+
+
+#### Search and Delete
+
+#### Insert
+
+#### Binary Search Tree
+
+#### Heap
+
+#### Self-Balancing Tree
+
+#### Red-Black Tree
+
+
+#### Tree Rotation
