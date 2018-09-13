@@ -147,16 +147,48 @@ https://classroom.udacity.com/courses/ud513/lessons/7123524086/concepts/71225249
 
 
 ### tree traversal
+1. DFS
+2. BFS: level order
 #### Depth-First Traversals
-
+1. pre-order
+2. in-order
+3. post-order
 
 #### Search and Delete
+1. search: O(n)
+2. delete: O(n)
+
 
 #### Insert
+1. traverl through of the number of node that equals to the height of the tree
 
-#### Binary Search Tree
+2. height of a binary tree
+* level=log(n)
+
+#### Binary Tree
+1. each node can have most 2 children
+
+## Some common tree types
+1. what tasks were they speed up
+2. what cons and pros
+
+#### Binary Search Tree (BST)
+1. a type of Binary Tree
+2. Rule:
+* every value on the left of a particular node is smaller than it 
+* do search, insertion and delete quickly
+3. search: run time is the height of the tree: O(logN)
+4. complications: unbalanced binary tree, worst case for BST, O(n)
 
 #### Heap
+1. another specific type of tree,complete tree,left first, elements are arranged in increasing or decreasing order
+2. max heaps: root is the biggest; min heaps: root is smallest
+3. max heap
+* function get the maximum value: peek(), O(1)
+* search: O(n), averageO(n/2)
+* insert: heapify, O(logN) --> height of the tree
+4. implementation: usually as arrays
+* save the pointers than saving it as tree node object
 
 #### Self-Balancing Tree
 
