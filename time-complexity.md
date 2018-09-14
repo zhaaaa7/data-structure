@@ -178,7 +178,7 @@ https://classroom.udacity.com/courses/ud513/lessons/7123524086/concepts/71225249
 * every value on the left of a particular node is smaller than it 
 * do search, insertion and delete quickly
 3. search: run time is the height of the tree: O(logN)
-4. complications: unbalanced binary tree, worst case for BST, O(n)
+4. complications: unbalanced binary tree, worst case for BST, O(n), just a linked list
 
 #### Heap
 1. another specific type of tree,complete tree,left first, elements are arranged in increasing or decreasing order
@@ -191,8 +191,80 @@ https://classroom.udacity.com/courses/ud513/lessons/7123524086/concepts/71225249
 * save the pointers than saving it as tree node object
 
 #### Self-Balancing Tree
+1. try to minimize the number of levels it uses
 
 #### Red-Black Tree
+1. rule 1: nodes are assigned additional color property: red or black
+2. rule 2: second property: existence of null leaf nodes -- black
+3. rule 3: both children of a red node should be black
+4. rule 4 (optional): root node -- black
+5. rule 5: every path from the node to the null leave must contain the same number of black nodes
 
+
+6. insertion
 
 #### Tree Rotation
+
+
+## Graph (network)
+1. graph is a data structure designed to shwo relationships between object
+2. node - vertex, edge, can both save data, depends on what I use this graph for
+3. tree is a more specific type of graph
+4. forms a cycle, no root
+
+
+
+### Direction and cycles
+1. directed graph: has edges with direction
+2. undirected graph
+3. cycles can be very dangerous: infinite loop -- acyclic
+4. DAG: directed, acyclic graph
+
+### connectivity
+1. the minimum number of elements that needs to be removed for a graph to become disconnected
+
+
+### representation
+1. Object: vertx object / edge object -- search is hard
+2. Edge List: `[[0,1],[1,2],[1,3][2,3]]` --> two nodes has edge between them
+
+2D-list
+
+3. Adjacency list: `[[1],[0,2,3],[1,3][2,1]]`: ID of a node is index of the array, the value is the nodes that is adjacent to the node
+
+### Adjacency Matrix -- rectangle array
+`
+[
+[0,1,0,0]
+[1,0,1,1]
+[0,1,0,1]
+[0,1,1,0]
+]
+`
+
+### Grapgh traversal
+1. no obvious node to start
+
+
+### depth-first search --O(2E+V)
+1. seen
+2. add to the stack
+3. pick an edge, add to stack 
+4. see the seen, go previous node, try other edges
+5. pop off the nodes with all visited edge
+
+6. or use recursion
+
+### breadth-first search -- --O(2E+V)
+1. seen
+2. visit all adjacent node
+3. add to queue
+4. dequeue
+
+5. like building a tree
+
+
+### notable paths 
+1.eulerian pat:h start at one node, traverse through all edges, and end at one node
+
+2. hamiltonian path: traverse all nodes
