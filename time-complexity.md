@@ -233,14 +233,14 @@ https://classroom.udacity.com/courses/ud513/lessons/7123524086/concepts/71225249
 3. Adjacency list: `[[1],[0,2,3],[1,3][2,1]]`: ID of a node is index of the array, the value is the nodes that is adjacent to the node
 
 ### Adjacency Matrix -- rectangle array
-`
+```
 [
 [0,1,0,0]
 [1,0,1,1]
 [0,1,0,1]
 [0,1,1,0]
 ]
-`
+````
 
 ### Grapgh traversal
 1. no obvious node to start
@@ -265,6 +265,6 @@ https://classroom.udacity.com/courses/ud513/lessons/7123524086/concepts/71225249
 
 
 ### notable paths 
-1.eulerian pat:h start at one node, traverse through all edges, and end at one node
+1. eulerian pat:h start at one node, traverse through all edges, and end at one node
 
 2. hamiltonian path: traverse all nodes
