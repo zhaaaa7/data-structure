@@ -104,3 +104,12 @@ height of empty tree is -1, height of tree of 1 node is 1
 ## binary search tree
 1. the cost of a sorted array is `logN`
 <img src="https://github.com/zhaaaa7/data-structure/blob/master/img/bigO.png" width="700px" />
+
+2. all nodes in left subtree is <= Node, in right subtree is >=Node
+
+3. **seach space will be reduced to** n/2 each time, and finaaly reach 1, that is 
+```
+n/(2^k)=1 => k=logn
+```
+
+4. balanced tree becomes unbalance during insertion and deletion, so we need to restore is
