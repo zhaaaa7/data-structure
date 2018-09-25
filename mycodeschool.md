@@ -86,5 +86,20 @@ struct Node {
 
 2. maximum number of nodes in a tree with height n: 2^(n+1)-1
 3. height of a perfect binary tree: log(n+1)-1
-height of a complete binary tree: `[logn]`
+height of a complete binary tree: `[logN]`
 
+4. cost of operation on tree is proportional to the height of tree. -- keep a tree balanced, minimize height
+
+for a tree with N nodes, the minimum height is `floor(logN`), the maximum height is `N-1`
+
+5. balanced binary tree: difference between height of left and right subtree for every node is no more than k (mostly 1)
+
+height of empty tree is -1, height of tree of 1 node is 1
+
+6. implementation
+1) dynamically allocated nodes
+2) array: complete binary tree -- for node at index N, left child will be at index 2N+1, right child will be at index 2N+2
+* heap is a special binary tree, is implement by array
+
+## binary search tree
+1. the cost of a sorted array is `logN`
