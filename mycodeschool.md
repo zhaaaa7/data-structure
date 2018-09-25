@@ -103,3 +103,4 @@ height of empty tree is -1, height of tree of 1 node is 1
 
 ## binary search tree
 1. the cost of a sorted array is `logN`
+<img src="https://github.com/zhaaaa7/data-structure/blob/master/img/bigO.png" width="700px" />
