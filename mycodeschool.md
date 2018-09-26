@@ -113,3 +113,44 @@ n/(2^k)=1 => k=logn
 ```
 
 4. balanced tree becomes unbalance during insertion and deletion, so we need to restore is
+
+## graph
+1. no rules for connection
+```
+G=(V,E) //ordered pair
+```
+edge is identified by its two end
+
+2. edges:
+* directed: `(u,v)`
+* undirected: `{u,v}`
+
+3. directed graph and undirected graph
+weighted/unweighted graph
+
+
+4. application: represent collection of objects having some kind of pairwise relationship
+* social network
+* web crawling: graph traversal
+* inter-city road network
+
+5. properties
+* simple graph: graph with no self-loop,multi-edge
+* max edge for directed graph: `0<=|E|<=n(n-1)`, min edge for directed graph: `0<=|E|<=n(n-1)/2`
+* dense/sparse graph
+* walk: a sequence of vertices where each adjacent pair is connected by an edge
+
+path: a walk in which no vertices(thus no edges) are not repeated
+
+trail: a trail in which ni edges are not repeated
+
+closed walk: starts and ends at same vertex
+
+simple cycle: no other vertixes is repeated
+
+acyclic graph: a graph with no cycle
+
+
+* strongly connected graph: if there is a path from any vertex to any other vertex
+
+weakly connected: if it can be stronly connected if ignoring direction
