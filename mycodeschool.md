@@ -154,3 +154,8 @@ acyclic graph: a graph with no cycle
 * strongly connected graph: if there is a path from any vertex to any other vertex
 
 weakly connected: if it can be stronly connected if ignoring direction
+
+# implementation
+
+## BST
+1. All nodes will be created in dynamic memory or heap section of application memory using malloc function. They cannot have ha name or identifier. They have to be accessed through a pointer.
